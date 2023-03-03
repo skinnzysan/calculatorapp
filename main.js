@@ -1,6 +1,10 @@
+// Display variables
+
 const currentNumber = document.querySelector('#currentNumber');
 const previousNumber = document.querySelector('#previousNumber');
 const mathSign = document.querySelector('#mathSign');
+
+// Buttons variables
 
 const numberButtons = document.querySelectorAll('#number');
 const operatorButtons = document.querySelectorAll('#operator');
@@ -8,7 +12,11 @@ const operatorButtons = document.querySelectorAll('#operator');
 const clearButton = document.querySelector('#clear');
 const equalButton = document.querySelector('#equal');
 
+// Other
+
 let result = '';
+
+// Functions
 
 function Display() {
     if (this.textContent === '.' && currentNumber.innerHTML === '.') return;
@@ -58,6 +66,8 @@ function clearDisplay() {
     previousNumber.innerHTML = '';
     mathSign.innerHTML = '';
 }
+
+// Event Listeners
 
 numberButtons.forEach((button) => {
     button.addEventListener('click', Display);
