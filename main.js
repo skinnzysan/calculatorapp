@@ -67,3 +67,13 @@ operatorButtons.forEach((button) => {
 });
 clearButton.addEventListener('click', clearDisplay);
 equalButton.addEventListener('click', showResult);
+
+// Themes
+
+function defaultstyle() {
+    document.getElementById('style').href = 'themes/default.css';
+}
+
+function iosstyle() {
+    document.getElementById('style').href = 'themes/ios.css';
+}

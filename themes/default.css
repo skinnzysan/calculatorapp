@@ -35,6 +35,7 @@ div {
 }
 
 .result {
+  overflow: hidden;
   height: 70px;
   width: 280px;
   display: flex;
@@ -71,6 +72,10 @@ div {
   transition: .2s;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .longbutton {
   height: 70px;
   width: 140px;
@@ -84,6 +89,30 @@ div {
 .longbutton:hover {
   background-color: #595959;
   transition: .2s;
+}
+
+.longbutton:hover {
+  cursor: pointer;
+}
+
+.themes {
+  position: absolute;
+  right: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  color: white;
+  text-align: right;
+}
+
+.themes > p {
+  margin-top: 20px;
+}
+
+.themes > p:hover {
+  color: red;
+  transform: scale(1.1);
+  transition: .2s;
+  cursor: pointer;
 }
 
 .credits {
