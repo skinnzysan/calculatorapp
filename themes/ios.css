@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap");
 
 * {
   margin: 0;
@@ -16,114 +16,114 @@ body {
 }
 
 div {
-    font-size: 0;
+  font-size: 0;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .result {
-    overflow: hidden;
-    height: 70px;
-    width: 290px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: xxx-large;
+  overflow: hidden;
+  height: 70px;
+  width: 290px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: xxx-large;
 }
 
 .button {
-    height: 70px;
-    width: 70px;
-    margin: 5px;
-    border: 0;
-    border-radius: 35px;
-    font-family: 'Roboto', sans-serif;
-    font-size: large;    
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  border: 0;
+  border-radius: 35px;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
 }
 
 .button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .longbutton {
-    height: 70px;
-    width: 150px;
-    margin: 5px;
-    border: 0;
-    border-radius: 35px;
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
+  height: 70px;
+  width: 150px;
+  margin: 5px;
+  border: 0;
+  border-radius: 35px;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
 }
 
 .longbutton:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #number {
-    background-color: #505050;
-    color: #ffffff;
+  background-color: #505050;
+  color: #ffffff;
 }
 
 #number:hover {
-    background-color: #363636;
-    color: #ffffff;
-    transition: .2s;
+  background-color: #363636;
+  color: #ffffff;
+  transition: 0.2s;
 }
 
 #operator {
-    background-color: #FF9500;
-    color: #ffffff;
+  background-color: #ff9500;
+  color: #ffffff;
 }
 
 #operator:hover {
-    background-color: #cc7700;
-    color: #ffffff;
-    transition: .2s;
+  background-color: #cc7700;
+  color: #ffffff;
+  transition: 0.2s;
 }
 
 #equal {
-    background-color: #FF9500;
-    color: #ffffff;
+  background-color: #ff9500;
+  color: #ffffff;
 }
 
 #equal:hover {
-    background-color: #cc7700;
-    color: #ffffff;
-    transition: .2s;
+  background-color: #cc7700;
+  color: #ffffff;
+  transition: 0.2s;
 }
 
 #clear {
-    background-color: #D4D4D2;
-    color: #000000;
+  background-color: #d4d4d2;
+  color: #000000;
 }
 
 #clear:hover {
-    background-color: #bcbcb9;
-    color: #000000;
-    transition: .2s;
+  background-color: #bcbcb9;
+  color: #000000;
+  transition: 0.2s;
 }
 
 .themes {
   position: absolute;
   right: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: larger;
   color: white;
   text-align: right;
 }
 
 .themes > p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .themes > p:hover {
   color: red;
   transform: scale(1.1);
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -133,7 +133,7 @@ div {
   bottom: 4px;
   text-decoration: none;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: medium;
 }
 

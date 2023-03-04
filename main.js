@@ -1,89 +1,90 @@
 // Display variables
 
-const currentNumber = document.querySelector('#currentNumber');
-const previousNumber = document.querySelector('#previousNumber');
-const mathSign = document.querySelector('#mathSign');
+const currentNumber = document.querySelector("#currentNumber");
+const previousNumber = document.querySelector("#previousNumber");
+const mathSign = document.querySelector("#mathSign");
 
 // Buttons variables
 
-const numberButtons = document.querySelectorAll('#number');
-const operatorButtons = document.querySelectorAll('#operator');
+const numberButtons = document.querySelectorAll("#number");
+const operatorButtons = document.querySelectorAll("#operator");
 
-const clearButton = document.querySelector('#clear');
-const equalButton = document.querySelector('#equal');
+const clearButton = document.querySelector("#clear");
+const equalButton = document.querySelector("#equal");
 
 // Other
 
-let result = '';
+let result = "";
 
 // Functions
 
 function Display() {
-    if (this.textContent === '.' && currentNumber.innerHTML === '.') return;
+  if (this.textContent === "." && currentNumber.innerHTML === ".") return;
 
-    currentNumber.innerHTML += this.textContent;
+  currentNumber.innerHTML += this.textContent;
 }
 
 function Operate() {
-    if (this.textContent === '-' && currentNumber.innerHTML === '') currentNumber.innerHTML = '-';
-    if (currentNumber.innerHTML === '') return;
-    if (mathSign.innerHTML !== '') showResult();
+  if (this.textContent === "-" && currentNumber.innerHTML === "")
+    currentNumber.innerHTML = "-";
+  if (currentNumber.innerHTML === "") return;
+  if (mathSign.innerHTML !== "") showResult();
 
-    previousNumber.innerHTML = currentNumber.innerHTML;
-    mathSign.innerHTML = this.textContent;
-    currentNumber.innerHTML = '';
+  previousNumber.innerHTML = currentNumber.innerHTML;
+  mathSign.innerHTML = this.textContent;
+  currentNumber.innerHTML = "";
 }
 
 function showResult() {
-    if (currentNumber.innerHTML === '' || previousNumber.innerHTML === '') return;
+  if (currentNumber.innerHTML === "" || previousNumber.innerHTML === "") return;
 
-    let a = Number(currentNumber.innerHTML);
-    let b = Number(previousNumber.innerHTML);
-    let op = mathSign.innerHTML;
+  let a = Number(currentNumber.innerHTML);
+  let b = Number(previousNumber.innerHTML);
+  let op = mathSign.innerHTML;
 
-    switch(op) {
-        case '+':
-        result = a + b;
-        break;
-        case '-':
-        result = b - a;
-        break;
-        case 'x':
-        result = a * b;
-        break;
-        case ':':
-        result = b / a;
-        break;
-    }
+  switch (op) {
+    case "+":
+      result = a + b;
+      break;
+    case "-":
+      result = b - a;
+      break;
+    case "x":
+      result = a * b;
+      break;
+    case ":":
+      result = b / a;
+      break;
+  }
 
-    currentNumber.innerHTML = result;
-    previousNumber.innerHTML = '';
-    mathSign.innerHTML = '';
+  currentNumber.innerHTML = result;
+  previousNumber.innerHTML = "";
+  mathSign.innerHTML = "";
 }
 
 function clearDisplay() {
-    currentNumber.innerHTML = '';
-    previousNumber.innerHTML = '';
-    mathSign.innerHTML = '';
+  currentNumber.innerHTML = "";
+  previousNumber.innerHTML = "";
+  mathSign.innerHTML = "";
 }
 
 // Event Listeners
 
-numberButtons.forEach((button) => {
-    button.addEventListener('click', Display);
+numberButtons.forEach(button => {
+  button.addEventListener("click", Display);
 });
-operatorButtons.forEach((button) => {
-    button.addEventListener('click', Operate);
+operatorButtons.forEach(button => {
+  button.addEventListener("click", Operate);
 });
-clearButton.addEventListener('click', clearDisplay);
-equalButton.addEventListener('click', showResult);
+clearButton.addEventListener("click", clearDisplay);
+equalButton.addEventListener("click", showResult);
 
 // Themes
 
 function defaultstyle() {
-    document.getElementById('style').href = 'themes/default.css';
+  document.getElementById("style").href = "themes/default.css";
 }
 
 function iosstyle() {
-    document.getElementById('style').href = 'themes/ios.css';
+  document.getElementById("style").href = "themes/ios.css";
 }

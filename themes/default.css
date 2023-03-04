@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap");
 
 * {
   margin: 0;
@@ -43,7 +43,7 @@ div {
   align-items: center;
   background-color: #18b300;
   color: #000000;
-  font-family: 'Silkscreen', cursive;
+  font-family: "Silkscreen", cursive;
   font-size: xxx-large;
   border: 10px;
   box-sizing: border-box;
@@ -63,13 +63,13 @@ div {
   background-color: #666666;
   color: #ffffff;
   border: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: large;
 }
 
 .button:hover {
   background-color: #595959;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .button:hover {
@@ -82,13 +82,13 @@ div {
   background-color: #666666;
   color: #ffffff;
   border: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: large;
 }
 
 .longbutton:hover {
   background-color: #595959;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .longbutton:hover {
@@ -98,7 +98,7 @@ div {
 .themes {
   position: absolute;
   right: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: larger;
   color: white;
   text-align: right;
@@ -111,7 +111,7 @@ div {
 .themes > p:hover {
   color: red;
   transform: scale(1.1);
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -121,7 +121,7 @@ div {
   bottom: 4px;
   text-decoration: none;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: medium;
 }
 
